@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <title>Homework Javascript</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container border">
+          <div class="header border-bottom border-dark">
+            <h3>Tanggal dan Tahun</h3>
+            <h3>Waktu</h3>
+            <h3>Temperature Convertion</h3>
+          </div> 
+          <div class="drop">
+              <!-- Dropdown 1-->
+              <select class="form-select" aria-label="Default select example" id="from" onchange="select()">
+                  <option id="from-celcius" value="1">Celcius</option>
+                  <option id="from-farenheit" value="2">Farenheit</option>
+                  <option id="from-reamur" value="3">Reamur</option>
+              </select>
+                  <!-- End Dropdown 1 -->
+                  
+                  <h4>To</h4>
+
+                  <!-- Dropdown 2-->
+                  <select class="form-select" aria-label="Default select example" id="to" onchange="select()">
+                      <option id="to-celcius" value="1">Celcius</option>
+                      <option id="to-farenheit" value="2">Farenheit</option>
+                      <option id="to-reamur" value="3">Reamur</option>
+                  </select>
+              <!-- End Dropdown 2 -->
+          </div>
+          
+          <!-- Input Form -->
+          <div class="input">
+              <form>
+                  <div class="mb-3">
+                    <input type="number" class="form-control" placeholder="Input Numbers" id="input" onkeyup="konv()">
+                  </div>
+                  <h3>=</h3>
+                  <div class="mb-3">
+                    <input type="number" class="form-control" placeholder="Result" id="result" disabled >
+                  </div>
+              </form>
+          </div>
+          
+      </div>
+    </div>
+    
+    <div class="change-color">
+      <div class="container">
+        <h5>Change Background Color:</h5>
+        <div class="mb-3">
+          <input class="form-control" placeholder="Insert color" id="color">
+          <button type="button" class="btn btn-secondary" onclick="setColor()">Change Color</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+
+<script src="./src/scripts/conversion.js"></script>
+</html>

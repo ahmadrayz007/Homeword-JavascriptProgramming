@@ -1,0 +1,51 @@
+body {
+  background-color: #EC7063;
+}
+
+.main .container {
+  margin-top: 30px;
+  padding: 30px;
+  width: 60%;
+  border-radius: 20px;
+  background-color: #FDEDEC;
+}
+
+.main .container .header {
+  margin-bottom: 12%;
+}
+
+.main .container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main .container .dropdown {
+  text-align: center;
+}
+
+.main .container h4 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.change-color .container {
+  margin-top: 20px;
+  width: 60%;
+}
+
+.change-color .btn-secondary {
+  margin-top: 10px;
+  background-color: #FDEDEC;
+  color: black;
+}
+
+.drop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */
